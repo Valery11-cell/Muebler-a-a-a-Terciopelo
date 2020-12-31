@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<style type="text/css">
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		#contenedor{
+			border: 1px solid silver;
+			margin: 2em auto;
+			padding: -300px;
+			width: 400px;
+			box-shadow: 0px 0px 5px #B9B8B8;
+		}
+		h2{
+			font-family: Candara Light;
+			font-size: 40px;
+			margin-left: 22px;
+			margin-top: 
+		}
+		#nombre{
+			border: 1px solid silver;
+			margin-left: 35px;
+			box-shadow: 0px 0px 2px #B9B8B8;
+			padding: 10px;
+			padding-left: 150px;
+		}
+		.p1{
+			font-family: Arial Black;
+			font-size: 15px;
+			margin-left: 110px;
+		}
+		.p2{
+			font-family: Arial Black;
+			font-size: 15px;
+			margin-left: 70px;
+		}
+		span{
+			color: red;
+		}
+		.nombre{
+			font-family: Candara Light;
+			font-size: 20px;
+			margin-left: 160px;
+		}
+		#nombre{
+			margin-top: 30px;
+		}
+		.paterno{
+			font-family: Candara Light;
+			font-size: 20px;
+			margin-left: 130px;
+			margin-top: 200px;
+		}
+		.materno{
+			font-family: Candara Light;
+			font-size: 20px;
+			margin-left: 129px;
+			margin-top: 200px;
+		}
+		.direccion{
+			font-family: Candara Light;
+			font-size: 20px;
+			margin-left: 123px;
+			margin-top: 200px;
+		}
+		.contraseña{
+			font-family: Candara Light;
+			font-size: 20px;
+			margin-left: 150px;
+			margin-top: 200px;
+		}
+		.contraseña1{
+			font-family: Candara Light;
+			font-size: 20px;
+			margin-left: 110px;
+			margin-top: 200px;
+		}
+		.bt1{
+			padding: -15px;
+			font-family: Century gothic;
+			margin-top: 30px;
+			margin-left: 150px;
+			margin-bottom: 50px;
+		}
+		.bt1:hover{
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+		function registro(){
+			alert("¡Gracias por ser parte de Mueblería Terciopelo!");
+			location.href="http://localhost/cetpro/MODULO 2.- Diseño Web/Prácticas/Terciopelo.html";
+		}
+	</script>
+</head>
+<body>
+	<div id="contenedor">
+		<h2>CREAR UNA CUENTA</h2>
+		<P class="p1">Información Personal</P>
+		<section>
+			<label class="nombre" for="nombre">Nombre<span class="requerido">*</span>
+			<br>
+			<input id="nombre" name="nombre" value=""/>
+			</label>
+			<br>
+			<br>
+			<br>
+			<label class="paterno" for="nombre">Apellido paterno<span class="requerido">*</span>
+			<br>
+			<input id="nombre" name="nombre" value=""/>
+			</label>
+			<br>
+			<br>
+			<br>
+			<label class="materno" for="nombre">Apellido materno<span class="requerido">*</span>
+			<br>
+			<input id="nombre" name="nombre" value=""/>
+			</label>
+			<br>
+			<br>
+			<br>
+			<label class="direccion" for="nombre">Dirección de E-mail<span class="requerido">*</span>
+			<br>
+			<input id="nombre" name="nombre" value=""/>
+			</label>
+		</section>
+		<br>
+		<br>
+		<br>
+		<p class="p2">Información de Inicio de Sesión</p>
+		<section>
+			<br>
+			<label class="contraseña" for="nombre">Contraseña<span class="requerido">*</span>
+			<br>
+			<input id="nombre" name="nombre" value=""/>
+			</label>
+			<br>
+			<br>
+			<br>
+			<label class="contraseña1" for="nombre">Confirmar contraseña<span class="requerido">*</span>
+			<br>
+			<input id="nombre" name="nombre" value=""/>
+			</label>
+			<br>
+		</section>
+		<button class="bt1" onclick="registro()"><p>Registrarse</p></button>
+	</div>
+</body>
+</html>

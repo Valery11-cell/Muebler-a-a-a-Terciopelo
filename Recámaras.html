@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MT: Recámaras</title>
+	<link rel="shorcut icon" type="image/x-icon" href="favicon.ico">
+	<script type="text/javascript">
+		function sesion(){
+			location.href="http://localhost/cetpro/MODULO 2.- Diseño Web/Prácticas/Iniciar sesión.html";
+		}
+		function registro(){
+			location.href="http://localhost/cetpro/MODULO 2.- Diseño Web/Prácticas/Formulario.html";
+		}
+	</script>
+	<style type="text/css">
+	    a{
+			color: #565549;
+			text-decoration: none;
+		}
+		a:hover{
+			color: #EC1414;
+			text-decoration: none;
+		}
+		#logo{
+			width: 500px;
+			height: 350px;
+			margin-left: 410px;
+		}
+	    .promo{
+			color: #EC1414;
+		}
+		.table{
+			padding-bottom: 200px;
+		}
+		.botones{
+			margin-left: 910px;
+			padding-bottom: 50px;
+		}
+		nav{
+			padding-top: 80px;
+		}
+		nav a{
+			text-decoration: none;
+			color-interpolation: inherit;
+			font-size: 14px;
+		}
+		nav li{
+			display: inline-block;
+			padding: 5px 10px;
+			color: #333;
+			font-family: Century gothic;
+			float: left;
+			padding-left: 80px;
+			font-size: 13px;
+			position: relative;
+		}
+		.carrito{
+			margin-top: -10px;
+		}
+		.submenu{
+			background-color: white;
+		}
+		nav li:hover{
+			color: #EC1414;
+			cursor:pointer;
+		}
+		nav li>ul{
+			display: none;
+		}
+		nav li:hover>ul{
+			display: block;
+			position: absolute;
+			top: 30px;
+			left: 0px;
+		}
+		.texto{
+			font-family: Century gothic;
+		}
+		.texto:active{
+			font-family: Century gothic;
+		}
+		p{
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.bt1{
+			padding:2px;
+			padding-bottom: 0.5px;
+			padding-top: 0.5px;
+			font-family: Century gothic;
+		}
+		.bt1:hover{
+			cursor: pointer;
+		}
+		footer{
+			background: #5F5E5E;
+			color: #DCDBDB;
+			font-family: Arial Narrow;
+			margin-top: 50px;
+		}
+		.footer{
+			margin-left: 160px;
+		}
+		.sub1{
+			font-size: 20px;
+			margin-top: 0px;
+			font-family: Candara Light;
+		}
+		.sub2{
+			font-size: 20px;
+			margin-top: 35px;
+			font-family: Candara Light;
+		}
+		.sub3{
+			font-size: 20px;
+			margin-top: 106px;
+			font-family: Candara Light;
+		}
+		.sub4{
+			font-size: 20px;
+			margin-top: 140px;
+			font-family: Candara Light;
+		}
+		.subb{
+			margin-top: 20px;
+		}
+		#copyright{
+			margin-left: 530px;
+			font-size: 13px;
+		}
+		.precios2{
+			margin-top: 100px;
+			font-family: Candara Light;
+			color: #DB2121;
+			font-size: 25px;
+			margin-left: 580px;
+			margin-bottom: 45px;
+		}
+		.precios3{
+			font-family: Futura Bk BT;
+			padding-right: 50px;
+			padding-left: 50px;
+		}
+		.hist{
+			font-family: Candara Light;
+			color: #DB2121;
+			margin-top: 70px;
+			margin-left: 290px;
+			margin-bottom: 25px;
+		}
+		.hist2{
+			margin-left: 40px;
+			margin-top: 140px;
+		}
+		.mis{
+			margin-top: 80px;
+			margin-left: 70px;
+		}
+		.mis1{
+			font-family: Candara Light;
+			color: #DB2121;
+			margin-left: 260px;
+			margin-bottom: 25px;
+		}
+		.vis{
+			font-family: Candara Light;
+			color: #DB2121;
+			margin-left: 365px;
+			margin-bottom: 25px;
+		}
+		.hist1{
+			font-family: Futura Bk BT;
+			padding-right: 50px;
+			padding-left: 110px;
+		}
+		.mis3{
+			font-family: Futura Bk BT;
+			padding-right: 50px;
+			padding-left: 50px;
+			margin-right: 50px;
+		}
+		.vis1{
+			font-family: Futura Bk BT;
+			padding-right: 50px;
+			padding-left: 50px;
+			margin-left: 90px;
+		}
+		.promocion{
+			margin-left: 15px;
+			margin-left: 
+			font-size: 40px;
+		}
+		.promocion1{
+			font-family: Candara Light;
+			color: #DB2121;
+			font-size: 30px;
+			margin-left: 50px;
+		}
+		.promocion2{
+			font-family: Candara Light;
+			color: #DB2121;
+			margin-left: 50px;
+			font-size: 30px;
+			margin-top: -10px;
+			margin-bottom: 50px;
+		}
+		.promocion3{
+			margin-top: 50px;
+			margin-left: 35px;
+		}
+		.salas{
+			margin-top: 50px;
+			margin-left: 120px;
+			-webkit-filter: brightness(0.75);
+		}
+		.salas:hover{
+			-webkit-filter: brightness(1);
+		}
+		#carrito{
+			margin-top: -30px;
+		}
+		#cantidad{
+			font-family: Candara Light;
+		}
+	</style>
+	<script type="text/javascript">
+
+		var productos;
+		var xprecio;
+		var xnombre;
+		var n;
+
+		function carrito() {
+			var p=confirm('¿Deseas agregar este producto al carrito?');
+			if(p==true)
+			{
+				n=parseInt(document.getElementById("cantidad").value);
+				var precio= document.getElementById("precio").value;
+				var nombre= document.getElementById("i1").value;
+				n=n+1;
+
+				alert("Se agregó correctamente");
+			}
+
+			document.getElementById("cantidad").value=n;
+		}
+
+		function mostrarcarrito(){
+			var precio= document.getElementById("precio").value;
+			var nombre= document.getElementById("i1").value;
+			alert("El producto:"+nombre+ "El costo es:"+precio);
+		}
+	</script>
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<!--script type="text/javascript" src="engine1/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
+<body>
+	<div class="botones">
+		<input type="text" class="texto">
+ 		<span>
+ 			<button class="bt1"><p>Buscar</p></button>
+ 			<button class="bt1" onclick="registro()"><p>Registrarse</p></button>
+ 			<button class="bt1" onclick="sesion()"><p>Iniciar sesión</p></button>
+ 		</span>
+	</div>
+	<table style="width: 100%">
+		<colgroup>
+			<col style="width: 80%">
+			<col style="width: 5%">
+			<col style="width: 5%">
+			<col style="width: 5%">
+			<col style="width: 5%">
+		</colgroup>
+		<tr>
+			<td><img id="logo" src="muebleria.png"></td>
+			<td  class="table">
+				<a href="https://www.facebook.com/Valemil-Imprenta-110779217507257">
+				<img src="facebook.png" width="30" height="30"></a>
+			</td>
+			<td  class="table">
+				<a class="face" href="https://api.whatsapp.com/send?phone=51955306749&text=Somos%20la%20imprenta%20%22Valemil%22%2C%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte%3F">
+				<img src="whatsapp.png" width="30" height="30"></a>
+			</td>
+			<td  class="table">
+				<a href="https://www.instagram.com/">
+				<img src="instagram.png" width="45" height="30"></a>
+			</td>
+			<td  class="table">
+				<a href="https://goo.gl/maps/xT956XUar6zx1cQw6">
+				<img src="maps.png" width="30" height="30"></a>
+			</td>
+		</tr>
+	</table>
+	<nav>
+		<ul>
+			<li><img src="inicio.png" width="13" height="13"><a href="Terciopelo.html"> Inicio</a></li>
+			<li><img src="quienes somos.png" width="13" height="13"><a href="#"> Quienes somos</a></li>
+			<li><img src="sala.png" width="13" height="13"> Productos
+				<ul class="submenu">
+					<li><a href="Salas.html"> Juego de salas</a></li>
+					<li><a href="Comedores.html"> Comedores</a></li>
+					<li><a href="Recámaras.html"> Recámaras</a></li>
+					<li><a href="Colchones.html"> Colchones</a></li>
+				</ul>
+			</li>
+			<li><img src="hacer pedido.png" width="13" height="13"><a href="Cita virtual.html"> Cita virtual</a></li>		
+			<li class="promo"><img src="promociones.png" width="13" height="13"><a href="Remates.html"> Remates</a></li>	
+			<li><img src="contáctenos.png" width="13" height="13"><a href="Contáctenos1.html">Contáctenos</a></li>
+			<li><button id="carrito" onclick="mostrarcarrito()"><img class="carrito" src="carrito.png" width="30" height="30"></button><input style="width: 30px" type="number" id="cantidad" value="0" disabled=""></li>
+		</ul>
+	</nav>
+	<div>
+		<img class="promocion3" src="promo3.png">
+		<img id="i1" class="salas" src="reca1.png">
+		<span id="precio"></span><button onclick="carrito()" class="btn btn-sm btn-primary">+</button>
+		<img class="salas" src="reca2.png">
+		<span id="precio"></span><button onclick="carrito()" class="btn btn-sm btn-primary">+</button>
+		<img class="salas" src="reca3.png">
+		<span id="precio"></span><button onclick="carrito()" class="btn btn-sm btn-primary">+</button>
+		<img class="salas" src="reca4.png">
+		<span id="precio"></span><button onclick="carrito()" class="btn btn-sm btn-primary">+</button>
+		<img class="salas" src="reca5.png">
+		<span id="precio"></span><button onclick="carrito()" class="btn btn-sm btn-primary">+</button>
+		<img class="salas" src="reca6.png">
+		<span id="precio"></span><button onclick="carrito()" class="btn btn-sm btn-primary">+</button>
+		<img class="salas" src="reca7.png">
+		<span id="precio"></span><button onclick="carrito()" class="btn btn-sm btn-primary">+</button>
+	</div>
+<nav>
+	<main>
+		<article>
+			<p class="promocion1"><b>VEA TAMBIÉN:</b></p>
+			<p class="promocion2">___________________</p>
+			<a href=""><img class="promocion" src="promocion.png" width="1300" height="530"></a>
+		</article>
+	</main>
+</nav>
+<footer>
+	<table width="80%" class="footer">
+			<colgroup>
+				<col style="width: 20%">
+				<col style="width: 20%">
+				<col style="width: 20%">
+				<col style="width: 20%">
+			</colgroup>
+			<tr>
+				<td>
+					<p class="sub1">REDES SOCIALES</p>
+					<p class="subb"><a href="https://www.facebook.com/Valemil-Imprenta-110779217507257"><img src="facebook2.png" width="30" height="30"></a> Facebook</p>
+					<p><a href="https://www.instagram.com/"><img class="insta" src="insta.png" width="25" height="25"></a> Instagram</p>
+					<p><a href="https://api.whatsapp.com/send?phone=51955306749&text=Somos%20la%20imprenta%20%22Valemil%22%2C%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte%3F"><img src="wapp.png" width="30" height="23"></a> WhatsApp</p>
+				</td>
+				<td>
+					<p class="sub2">ENLACES INTERNOS</p>
+					<p class="subb"><a href="Inicio.html"><img src="inicio2.png" width="13" height="13"></a> Inicio</p>
+					<p><a href="Quienes somos.html"><img src="quienes somos2.png" width="13" height="13"></a> Quienes somos</p>
+					<p><a href="#"><img src="sala2.png" width="13" height="13"></a> Productos</p>
+					<p><a href="Cita virtual.html"><img src="hacer pedido2.png" width="13" height="13"></a> Cita Virtual</p>
+					<p><a href="Remates.html"><img src="promociones2.png" width="13" height="13"></a> Remates</p>
+					<p><a href="Contáctenos1.html"><img src="contáctenos2.png" width="13" height="13"></a> Contáctenos</p>
+				</td>
+				<td>
+					<p class="sub3">CONTACTO</p>
+					<p class="subb"><img src="maps2.png" width="13" height="13"></a> Avenida Jirón Moquegua 0445</p>
+					<p>Ilo, Moquegua, Perú.</p>
+					<p>Teléfonos:</p>
+					<p><img src="telefono.png" width="13" height="13"> 955-306-749</p>
+					<p><img src="telefono.png" width="13" height="13"> 956-002-333</p>
+					<p><img src="tele.png" width="13" height="13"> 48-28-44</p>
+					<p><img src="correo.png" width="40" height="40"></p>
+					<p>esvamuebleria@gmail.com</p>
+				</td>
+				<td>
+					<p class="sub4">SERVICIO AL CLIENTE</p>
+					<p class="subb">Solicita atención</p>
+					<p>Formas de pago:</p>
+					<br>
+					<p>
+						<img src="scotia.png" width="130" height="40"><br><br>
+						<img src="bcp.png" width="120" height="30"><br><br>
+						<img src="interbank.jpg" width="130" height="55">
+					</p>
+				</td>
+			</tr>
+        </table>
+        <br>
+        <br>
+        <div>
+        <p id="copyright">&copy; Mueblería Terciopelo todos los derechos reservados.</p>
+        </div>
+</footer>
+</body>
+</html>

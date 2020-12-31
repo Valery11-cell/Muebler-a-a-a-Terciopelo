@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Práctica 10</title>
+	<style type="text/css">
+	    body{
+	    	position: relative;
+	    	background-color: #f6bbaa;
+
+
+	    }
+		header{
+			width: 100%;
+			height: 200px;
+			background-color: #1d8ec2;
+			margin: 4px;
+			padding: 2px;
+
+		}
+		nav{
+			width: 100%;
+	
+			background-color: #20cad8;
+			margin-top: 0px;
+			padding: 2px;
+		}
+		main{
+			position: relative;
+			width: 100%;
+		}
+		main section{
+			margin: 4px;
+			padding: 2px;
+			float: left;
+
+			width: 79%;
+
+			background-color: #20cad8;
+		}
+		section article{
+			float: left;
+			margin: 4px;
+			padding: 2px;
+			width: 40%;
+			height: 200px;
+			background-color: #f4cf94;
+			overflow: scroll;
+		}
+		main aside{
+			float: right;
+			width: 20%;
+			height: 600px;
+			background-color: #20cad8;
+		}
+		footer{
+			float: left;
+			width: 90%;
+			height: 300px;
+			background-color: #1d8ec2;
+		}
+		#circle li{
+			list-style-type: circle;
+			list-style-position: inside;
+		}
+		#disc li{
+			list-style-type: disc;
+
+		}
+		#square li{
+			list-style-type: square;
+		}
+		#lroman li{
+			list-style-type: lower-roman;
+		}
+		#lgreek li{
+			list-style-type: lower-greek;
+		}
+		#llatin li{
+			list-style-type: lower-latin;
+		}
+		#img1 li{
+			list-style-image: url("flecha activa.png");
+		}
+		#img2 li{
+			list-style: circle inside;
+		}
+		#img2 li{
+			list-style-image: url("flecha inactiva.png");
+		}
+		#img3 li{
+			list-style-image: url("flecha activa.png");
+		}
+		ul.amenu{
+			width: 178px;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			border: 1px solid #7c7c7c;
+			border-bottom: none;
+
+
+		}
+		ul.amenu li{
+			background: #f4f4f4;
+			border-bottom: 1px solid #7c7c7c;
+			border-top: 1px solid #fff;
+		}
+		ul.amenu li a{
+			color: #333;
+			display: block;
+			padding: .2em 0 .2em .5em;
+			text-decoration: none;
+			text-align: center;
+		}
+		nav ul.nmenu{
+			margin-top: 4px;
+			list-style: none;
+			overflow: hidden;
+		}
+		nav ul.nmenu>li a{
+			color: #333;
+			display: block;
+			padding: .5em;
+			margin-right: 2px;
+			background: #ffb05f;
+			text-decoration: none;
+			border: 1px solid #ffb05f;
+
+		}
+		nav ul.nmenu>li{
+			display: inline-block;
+
+			width: 12%;
+		}
+		ul.nsmenu{
+			display: none;
+		}
+		nav ul.nmenu li a:hover{
+			background: #1d8ec2;
+
+
+		}
+		table{
+			border-collapse: separate;
+			caption-side: top;
+
+		}
+		th, td{
+			border: 1px solid #000;
+			empty-cells: hide;
+
+		}
+		table tr:hover{
+			background: #ffff66;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		cabecera
+	</header>
+	<nav>
+		<ul class="nmenu">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="Práctica 05.html">4</a></li>
+			<li><a href="Práctica 05.html">5</a></li>
+			<li><a href="Práctica 05.html">6</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="Práctica 04.html">8</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<p>Noticias</p>
+			<article>
+				noticia 1
+			</article>
+			<article>
+				noticia 2
+			</article>
+			<article>
+				noticia 3
+			</article>
+			<article>
+				noticia 4
+			</article>
+		</section>
+
+	<aside>
+		Enlaces externos
+		<ul class="amenu">
+			<li><a href="">1</a></li>
+			<li><a href="">2</a></li>
+			<li><a href="">3</a></li>
+			<li><a href="">4</a></li>
+			<li><a href="">5</a></li>
+		</ul>
+	</aside>
+</main>
+	<footer>
+		<address>
+			Pie de página
+		</address>
+	</footer>
+</body>
+</html>
